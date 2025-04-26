@@ -1,4 +1,5 @@
 import os
+import random as r
 
 
 def cls():
@@ -7,15 +8,16 @@ def cls():
 
 def main():
     """
-    main _summary_
+    main Every time it runs it outputs a random number between 1 and 6, simulating a dice rolling.
 
     Returns:
-        _type_: _description_
+        Nothing
     """
-    print ("Hello World!")
-    return None
+    r.seed()
+    dice_side = r.randint(1, 6)
+    print(f"You rolled a {dice_side}!", end="\n\n")
 
 
 if __name__ == "__main__":
-    cls()
+    # cls()
     main()
